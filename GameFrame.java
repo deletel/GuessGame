@@ -15,9 +15,9 @@ import javax.swing.JTextField;
 class GameFrame extends JFrame implements ActionListener {
    private static final long serialVersionUID = 1L;
 
-   int randomNumber = new Random().nextInt(10) + 1; //x=(int)(10 * Мath.random());
+   int randomNumber = new Random().nextInt(10) + 1; //x=(int)(10 * ГЊath.random());
    int numGuesses = 0;
-   String highLow = ""; //изм
+   String highLow = ""; //ГЁГ§Г¬
    JTextField textField = new JTextField(10);
    JButton button = new JButton("Check");
    JLabel label = new JLabel(numGuesses + " attempts");
@@ -82,7 +82,7 @@ class GameFrame extends JFrame implements ActionListener {
 		   else 
 			   guessWord = " attempts"; 
 		   //else
-			//   guessWord = " попыток";
+			//   guessWord = " ГЇГ®ГЇГ»ГІГ®ГЄ";
 		   
 		   label.setText(numGuesses + guessWord);   
 	   }
@@ -94,7 +94,7 @@ class GameFrame extends JFrame implements ActionListener {
 		   setVisible(false);
        }
        catch (NumberFormatException i) {
-    	   textField.setText("Введите число");
+    	   textField.setText("write the number");
     	    new java.util.Timer().schedule(new TimerTask(){
     	    	
     	    	//@Override
